@@ -1,5 +1,3 @@
-import Link from "next/link";
-
 export default function CheckoutPage() {
     return (
         <div className="h-screen p-6 ">
