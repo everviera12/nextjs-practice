@@ -6,7 +6,7 @@ export default function NotFoundPage() {
       <Link href={"/"} className="underline text-white">
         Back to home
       </Link>
-      
+
       <h1 className="mt-6 font-bold text-white">Page Not Found</h1>
     </div>
   );
