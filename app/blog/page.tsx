@@ -4,7 +4,6 @@ import { BlogProps } from "./_types/blog-types";
 export default async function BlogPage() {
     const res = await fetch(`https://api.vercel.app/blog`)
     const posts = await res.json()
-    console.log(posts);
 
     return (
         <div className="h-screen p-6 ">

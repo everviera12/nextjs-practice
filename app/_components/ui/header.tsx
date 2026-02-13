@@ -1,12 +1,12 @@
 "use client";
 import { usePathname } from "next/navigation";
+import { useMemo } from "react";
 
-import { useAuthContext } from "../auth-context";
+import { useAuthContext } from "../context/auth-context";
 
 import { Breadcrumbs, Button, Link } from "@mui/material";
 import NavigateNextIcon from "@mui/icons-material/NavigateNext";
 import HomeIcon from "@mui/icons-material/Home";
-import { useMemo } from "react";
 
 const NAV_LINKS = [
   { label: "Home", href: "/" },
@@ -53,7 +53,12 @@ export default function Header() {
         </Button>
       </nav>
 
-      <Breadcrumbs aria-label="breadcrumb" separator={<NavigateNextIcon fontSize="small" className="text-white!" />}>
+      <Breadcrumbs
+        aria-label="breadcrumb"
+        separator={
+          <NavigateNextIcon fontSize="small" className="text-white!" />
+        }
+      >
         <Link
           underline="hover"
           color="info"

@@ -1,11 +1,11 @@
-import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
-
 import "./globals.css";
 
-import { AuthProvider } from "./_components/auth-context";
-import Header from "./_components/ui/header";
+import type { Metadata } from "next";
+import { Geist, Geist_Mono } from "next/font/google";
 import { Suspense } from "react";
+
+import Header from "./_components/ui/header";
+import { AuthProvider } from "./_components/context/auth-context";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",

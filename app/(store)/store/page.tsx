@@ -1,10 +1,9 @@
 import Link from "next/link";
 import { Suspense } from "react";
 import Loading from "./loading";
-import { createClient } from "@supabase/supabase-js";
 
 export default function StorePage() {
-  console.log(createClient);
+  /* console.log(createClient); */
 
   return (
     /**

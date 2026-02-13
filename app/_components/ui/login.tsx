@@ -1,6 +1,7 @@
 "use client";
 
-import { useAuthContext } from "../auth-context";
+import { useAuthContext } from "../context/auth-context";
+
 
 export default function Login() {
   // we get the name from the our context
