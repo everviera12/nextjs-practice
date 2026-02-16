@@ -1,6 +1,6 @@
 "use client";
 
-import { useAuthContext } from "../context/auth-context";
+import { useAuthContext } from "../../context/auth-context";
 
 
 export default function Login() {
