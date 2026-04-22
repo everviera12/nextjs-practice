@@ -2,10 +2,6 @@ import "./globals.css";
 
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-import { Suspense } from "react";
-
-import Header from "../components/layouts/header";
-import { AuthProvider } from "../context/auth-context";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -30,12 +26,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <Suspense>
-          <AuthProvider>
-            <Header />
-            {children}
-          </AuthProvider>
-        </Suspense>
+        {children}
       </body>
     </html>
   );
